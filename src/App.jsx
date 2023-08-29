@@ -7,32 +7,8 @@ const host="http://localhost:5174"
 const pathImg=`${host}/img/${proyecto}/${nombre}.jpg`;
 
 /* vector con distintos tipo de secciones */
-const seccionesHistoria = [
-  {
-    title: "Que hago"
-  },
-  {
-    title: "Un poco de historia"
-  },
-  {
-    title: "Profesionalmente"
-  },
-];
-const seccionesProyectos=[
-  {title:"brewHouse"},
-  {title:"cima"},
-  {title:"contructoraArgentina"},
-  {title:"incantarte"},
-  {title:"usina"},
-]
-
-const proyectos=[
-  {titleProyecto:"brewhouse"},
-  {titleProyecto:"cima-2021"},
-  {titleProyecto:"usina-2021"},
-  {titleProyecto:"incantare"},
-  {titleProyecto:"constructoraArgentina"},
-];
+const seccionesHistoria = ["Que hago", "Un poco de historia", "Profesionalmente",];
+const seccionesProyectos=["brewHouse", "cima", "contructoraArgentina", "incantarte", "usina"]
 
 const slides = [
   { url: `${pathImg}`, title: `${nombre}` },
@@ -56,7 +32,9 @@ export default function App() {
           slides={slides} 
           parentWidth={500}
         />
-        <Accordion sections={seccionesProyectos}/>
+        { 
+          <Accordion sections={seccionesProyectos}/>
+        }
       </section>
     }
     </>
