@@ -10,7 +10,7 @@ export  const Proyecto=()=>{
 		<article>
 			{seccionesProyectos.map(filtro=>(
 				<>
-				<h2 className='font-bold text-4xl capitalize text-center'>{filtro}</h2>
+				<Accordion sections={[filtro]} />	
 				<section className="relative">
 					<div className="max-w-lg mx-auto">
 						{dataImg.filter(filtrado=>filtrado.proyecto===filtro).map(path=>
@@ -21,7 +21,6 @@ export  const Proyecto=()=>{
 								host={host}
 							/> 
 						)}
-						<Accordion sections={[filtro]} />	
 					</div>
 				</section>
 				</>
