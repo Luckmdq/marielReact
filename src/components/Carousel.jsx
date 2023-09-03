@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react"
 
 export default function Carousel({
-  children: slides,
+  slides,
   autoSlide = true,
   autoSlideInterval = 3000,
+	carpeta,
+	host,
 }) {
   const [curr, setCurr] = useState(0)
 
@@ -27,7 +29,9 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides}
+        {slides.map(img=>
+					<img src={`${host}/img/${carpeta}/${img}.jpg`} alt="" />
+				)}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button

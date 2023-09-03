@@ -3,7 +3,7 @@ import {dataTextos} from '../data/dataTexto';
 import {FaArrowCircleDown, FaArrowCircleUp} from 'react-icons/fa/index.esm';
 
 
-const AccordionSection = ({
+export const AccordionSection = ({
   section,
   isActiveSection,
   setActiveIndex,

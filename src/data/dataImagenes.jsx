@@ -1,6 +1,6 @@
 export const dataImg=[
 	{
-		proyecto:"brewhouse",
+		proyecto:"brewHouse",
 		nombre:["animacion", "envaseNovedoso","foodtruck","envases","isotipo-ori","isotipo-proc","latas","merchandaising","merchandaising2","pack","papeleria","publicidad","uniformes","webmobil",]
 	},
   {
@@ -13,7 +13,7 @@ export const dataImg=[
 	},
   {
 		proyecto:"incantarte",
-		nombre:["alternativa","color","feed","historias","logo","simbolo", "stickers"],
+		nombre:["Alternativa","Color","Feed","Historias","Logo","Simbolo", "Stickers"],
 	},
   {
 		proyecto:"constructoraArgentina",
